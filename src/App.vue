@@ -103,7 +103,9 @@ function open_folder(path: string) {
       </div>
     </div>
     <div id="info">
-      <a id="repo" href="#">Repo: (求个STAR!)</a>
+      <a id="repo" href="https://github.com/u3l6/CEF-Detector-Tauri"
+        >Repo(求Star!)</a
+      >
       <a id="website" href="https://u3l6.github.io/_">我的网站</a>
     </div>
   </div>
@@ -131,10 +133,10 @@ audio {
   top: 17%;
   font-size: 30px;
   text-shadow:
-    1px 1px 0 white,
-    -1px 1px 0 white,
-    1px -1px 0 white,
-    -1px -1px 0 white;
+    1px 1px 0 rgba(255, 255, 255, 0.6),
+    -1px 1px 0 rgba(255, 255, 255, 0.6),
+    1px -1px 0 rgba(255, 255, 255, 0.6),
+    -1px -1px 0 rgba(255, 255, 255, 0.6);
 }
 #title {
   width: max-content;
@@ -162,7 +164,7 @@ audio {
   border-radius: 10px;
   border-style: solid;
   border-width: 1px;
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.3);
 }
 #path:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -197,6 +199,11 @@ audio {
   position: fixed;
   bottom: 10px;
   left: 10px;
+  text-shadow:
+    1px 1px 0 rgba(255, 255, 255, 0.6),
+    -1px 1px 0 rgba(255, 255, 255, 0.6),
+    1px -1px 0 rgba(255, 255, 255, 0.6),
+    -1px -1px 0 rgba(255, 255, 255, 0.6);
 }
 #repo,
 #website {
@@ -205,6 +212,6 @@ audio {
 }
 #website {
   position: fixed;
-  left: 160px;
+  left: 120px;
 }
 </style>

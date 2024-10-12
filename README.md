@@ -1,16 +1,46 @@
-# Tauri + Vue + TypeScript
+# Cef Detector Tauri -<br>基于Tauri的CEF检测器 | A Cef Detector based on Tauri
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+查看你的操作系统里有多少[CEF (Chromium Embedded Framework)](https://github.com/chromiumembedded/cef)。<br>
+Check how many [CEF (Chromium Embedded Framework)](https://github.com/chromiumembedded/cef)s are on your system.
 
-## Recommended IDE Setup
+![alt text](Screenshot.png)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## 本应用基于Rust + Tauri + Vue编写 | This App is written with Rust + Tauri + Vue
 
-## Type Support For `.vue` Imports in TS
+### Tauri 是什么？ | What is Tauri?
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+<details>
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+> Tauri 是一个构建适用于所有主流桌面和移动平台的轻快二进制文件的框架。开发者们可以集成任何用于创建用户界面的可以被编译成 HTML、JavaScript 和 CSS 的前端框架，同时可以在必要时使用 Rust、Swift 和 Kotlin 等语言编写后端逻辑。
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+> Tauri is a framework for building tiny, fast binaries for all major desktop and mobile platforms. Developers can integrate any frontend framework that compiles to HTML, JavaScript, and CSS for building their user experience while leveraging languages such as Rust, Swift, and Kotlin for backend logic when needed.
+
+</details>
+
+### Tauri有哪些优势？| What are the advantages of Tauri?
+
+<details>
+
+> - 构建应用所需的可靠基础
+> - 使用系统原生 webview（网页视图）带来的更小打包体积
+> - 使用任何前端技术和多种语言绑定带来的灵活性
+
+> - Secure foundation for building apps
+> - Smaller bundle size by using the system’s native webview
+> - Flexibility for developers to use any frontend and bindings for multiple languages
+
+</details>
+
+## 用法 | Usage
+
+该应用需要[Microsoft Edge WebView2 Runtime](https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/)才能运行。而且需要用[Everything](https://www.voidtools.com/zh-cn/)完成完整的扫描才能实现功能。
+
+This App requires [Microsoft Edge WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) to run. And it needs to complete a full scan with [Everything](https://www.voidtools.com/) to function.
+
+## 作者 | Author
+
+[u3l6](https://github.com/u3l6)([Website](https://u3l6.github.io/_))
+
+参考项目 | Reference Projects<br>
+[CefDetectorX](https://github.com/ShirasawaSama/CefDetectorX) by [Shirasawa](https://github.com/ShirasawaSama)<br>
+[SafariYYDS](https://github.com/Lakr233/SafariYYDS) by [Lakr233](https://github.com/Lakr233)
